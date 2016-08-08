@@ -26,5 +26,7 @@ if [[ -s ~/.aliases ]]; then
 fi
 
 # Sdkman
-export SDKMAN_DIR="/Users/bruno/.sdkman"
-[[ -s "/Users/bruno/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/bruno/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR=$HOME"/.sdkman"
+if [[ -s $HOME"/.sdkman/bin/sdkman-init.sh" ]]; then
+  source $HOME"/.sdkman/bin/sdkman-init.sh"
+fi
