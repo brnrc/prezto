@@ -17,6 +17,14 @@ export EDITOR='vim'
 export VISUAL='vim'
 export PAGER='less'
 
+# Load global aliases
+alias resource="source $HOME/.zshrc"
+
+# Load local aliases
+if [[ -s ~/.aliases ]]; then
+  source ~/.aliases
+fi
+
 # Sdkman
 export SDKMAN_DIR="/Users/bruno/.sdkman"
 [[ -s "/Users/bruno/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/bruno/.sdkman/bin/sdkman-init.sh"
