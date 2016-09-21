@@ -25,8 +25,7 @@ if [[ -s ~/.aliases ]]; then
   source ~/.aliases
 fi
 
-# Sdkman
-export SDKMAN_DIR=$HOME"/.sdkman"
-if [[ -s $HOME"/.sdkman/bin/sdkman-init.sh" ]]; then
-  source $HOME"/.sdkman/bin/sdkman-init.sh"
+# Load local config
+if [[ -s ~/.zshrc_local ]]; then
+  source ~/.zshrc_local
 fi
